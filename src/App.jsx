@@ -20,11 +20,30 @@ function Header() {
   );
 }
 
+function CoreConcept(props) {
+  return (
+    <li>
+      <img src="..." alt="..."/>
+      <h3>TITLE</h3>
+      <p>DESCRIPTION</p>
+    </li>
+  );
+}
+
 function App() {
   return (
     <div>
       <Header />
       <main>
+        <section id="core-concept">
+          <h2>Core Concepts</h2>
+          <ul>
+            <CoreConcept/>
+            <CoreConcept/>
+            <CoreConcept/>
+            <CoreConcept/>
+          </ul>
+        </section>
         <h2>Time to get started!</h2>
       </main>
     </div>
